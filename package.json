@@ -12,6 +12,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "dev:electron": "cross-env NODE_ENV=development webpack --config webpack.electron.config.js --mode development && electron .",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,5 +35,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "electron": "^16.0.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^3.11.1",
+    "cross-env": "^7.0.3"
   }
 }
